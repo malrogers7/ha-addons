@@ -4,11 +4,9 @@ FROM ${BUILD_FROM}
 
 ARG BUILD_ARCH=amd64
 
-RUN apt-get update \
-    && apt-get install --no-install-recommends -y \
+RUN apk add --no-cache \
     jq \
-    curl \
-    && rm -rf /var/lib/apt/lists/*
+    curl
 
 COPY rootfs/ /
 
