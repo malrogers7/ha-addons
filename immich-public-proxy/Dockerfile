@@ -4,7 +4,7 @@ FROM $BUILD_FROM
 
 # 2. Install 'jq'
 # We need this tool to parse the 'options.json' file that Home Assistant creates
-RUN apk add --no-cache jq
+RUN apt-get update && apt-get install -y jq && rm -rf /var/lib/apt/lists/*
 
 # 3. Copy our startup script
 COPY run.sh /run.sh
