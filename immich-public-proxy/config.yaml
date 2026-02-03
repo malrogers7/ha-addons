@@ -17,6 +17,10 @@ options:
   show_gallery_title: true
   allow_download_all: 1
   show_home_page: true
+  show_image_description: true
+  show_image_location: false
+  show_image_camera: false
+  show_image_exif: false
 schema:
   immich_url: url
   public_url: url
@@ -26,6 +30,10 @@ schema:
   show_gallery_title: bool
   allow_download_all: "list(0|1|2)"
   show_home_page: bool
+  show_image_description: bool
+  show_image_location: bool
+  show_image_camera: bool
+  show_image_exif: bool
 ports:
   3000/tcp: 3000 # Maps container port 3000 to host port 3000
 map:
