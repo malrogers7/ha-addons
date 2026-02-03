@@ -2,7 +2,7 @@ name: "Immich Public Proxy"
 version: "1.0.0"
 slug: "immich_public_proxy"
 description: "A secure public proxy for Immich"
-url: "https://github.com/malrogers7/ha-addons/"
+url: "https://github.com/malrogers7/ha-addons/immich-public-proxy"
 arch:
   - amd64  
   - aarch64
