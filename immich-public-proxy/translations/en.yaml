@@ -11,3 +11,9 @@ configuration:
   single_image_gallery:
     name: "Single Image Gallery"
     description: "By default a link to a single image will directly open the image file. Set to true if you want to show a gallery page instead for a single item."
+  download_original:
+    name: "Download Original Photo"
+    description: "Set to false if you only want people to be able to download the 'preview' quality photo, rather than your original photo."
+  downloaded_filename:
+    name: "Filename of downloaded image"
+    description: "The filename of the downloaded image. 0 for the original filename if available, falling back to the Immich asset ID. 1 for the Immich asset ID number 2 for a shortened version of the asset ID: img_ plus the first 8 characters of the asset ID"
