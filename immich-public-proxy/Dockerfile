@@ -8,7 +8,8 @@ RUN apk add --no-cache \
     jq \
     curl
 
-COPY run.sh /run.sh
+#COPY run.sh /run.sh
+COPY rootfs/ /
 
 # Ensure the script is executable
 RUN chmod a+x /run.sh
