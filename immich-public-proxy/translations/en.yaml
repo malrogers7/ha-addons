@@ -17,9 +17,21 @@ configuration:
   download_original:
     name: "Download Original Photo"
     description: "Set to false if you only want people to be able to download the 'preview' quality photo, rather than your original photo."
-  downloaded_filename:
-    name: "Filename of downloaded image"
-    description: "The filename of the downloaded image. 0 for the original filename if available, falling back to the Immich asset ID. 1 for the Immich asset ID number 2 for a shortened version of the asset ID: img_ plus the first 8 characters of the asset ID"
   allow_download_all:
     name: "Allow Download All"
     description: "Allow visitors to download all files as a zip. 0 disable downloads. 1 follow Immich setting per share. 2 always allowed"
+  show_image_description:
+    name: "Show Image Description"
+    description: "Display the caption/description text added in Immich."
+  show_image_location:
+    name: "Show Location"
+    description: "Display the city/country where the photo was taken (if available)."
+  show_image_camera:
+    name: "Show Camera Info"
+    description: "Display the device used (e.g., iPhone 15, Canon EOS)."
+  show_image_exif:
+    name: "Show Detailed EXIF"
+    description: "Show technical details like ISO, F-stop, and Shutter Speed."
+  downloaded_filename:
+    name: "Filename Format"
+    description: "0 = Original name, 1 = Immich ID, 2 = Short ID."
