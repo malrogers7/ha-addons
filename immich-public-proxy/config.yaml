@@ -9,11 +9,23 @@ arch:
 startup: application
 boot: auto
 options:
-  immich_url: "http://192.168.1.X:2283"
+  immich_url: "http://YOUR_SYNOLOGY_IP:2283"
   public_url: "https://photos.yourdomain.com"
+  single_image_gallery: false
+  download_original: true
+  downloaded_filename: 0
+  show_gallery_title: true
+  allow_download_all: 1
+  show_home_page: true
 schema:
   immich_url: url
   public_url: url
+  single_image_gallery: bool
+  download_original: bool
+  downloaded_filename: "list(0|1|2)" # Creates a dropdown
+  show_gallery_title: bool
+  allow_download_all: "list(0|1|2)"
+  show_home_page: bool
 ports:
   3000/tcp: 3000 # Maps container port 3000 to host port 3000
 map:
