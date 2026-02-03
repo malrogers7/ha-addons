@@ -26,10 +26,7 @@ export CONFIG=$(jq -n \
       showHomePage: ($hp == "true"),
       showMetadata: {
         title: ($gt == "true"),
-        description: ($desc == "true"),
-        location: ($loc == "true"),
-        camera: ($cam == "true"),
-        exif: ($exif == "true")
+        description: ($desc == "true")
       }
     }
   }')
