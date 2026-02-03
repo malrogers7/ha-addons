@@ -15,6 +15,10 @@ export CONFIG=$(jq -n \
   --arg gt "$(jq --raw-output '.show_gallery_title' /data/options.json)" \
   --arg da "$(jq --raw-output '.allow_download_all' /data/options.json)" \
   --arg hp "$(jq --raw-output '.show_home_page' /data/options.json)" \
+  --arg desc "$(jq --raw-output '.show_image_description' /data/options.json)" \
+  --arg loc "$(jq --raw-output '.show_image_location' /data/options.json)" \
+  --arg cam "$(jq --raw-output '.show_image_camera' /data/options.json)" \
+  --arg exif "$(jq --raw-output '.show_image_exif' /data/options.json)" \
   '{
     ipp: {
       singleImageGallery: ($sg == "true"),
@@ -24,7 +28,11 @@ export CONFIG=$(jq -n \
       allowDownloadAll: ($da | tonumber),
       showHomePage: ($hp == "true"),
       showMetadata: {
-        title: ($gt == "true")
+        title: ($gt == "true"),
+        description: ($desc == "true"),
+        location: ($loc == "true"),
+        camera: ($cam == "true"),
+        exif: ($exif == "true")
       }
     }
   }')
