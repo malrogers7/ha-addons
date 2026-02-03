@@ -32,6 +32,5 @@ export CONFIG=$(jq -n \
   }')
 
 echo "Configuring environment..."
-echo " - Gallery Title enabled: $(jq --raw-output '.show_gallery_title' /data/options.json)"
 
 exec npm start
