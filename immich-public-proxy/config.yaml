@@ -22,10 +22,10 @@ schema:
   immich_url: url
   public_url: url
   single_image_gallery: bool
-  download_original: bool
-  downloaded_filename: "list(0|1|2)" # Creates a dropdown
+  download_original: bool 
+  downloaded_filename: "list(original_name|immich_id|short_id)"
   show_gallery_title: bool
-  allow_download_all: "list(0|1|2)"
+  allow_download_all: "list(disabled|per_share|always)"
   show_home_page: bool
   show_image_description: bool
 ports:
