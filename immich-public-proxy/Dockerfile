@@ -1,4 +1,4 @@
-ARG BUILD_FROM=alangrainger/immich-public-proxy:latest
+ARG BUILD_FROM=alangrainger/immich-public-proxy:1.15.1
 FROM ${BUILD_FROM}
 
 USER root
