@@ -33,7 +33,7 @@ configuration:
     name: "Allow Download All (Zip)"
     description: "Control if visitors can download entire albums as a zip file."
     value:
-      0: "Disabled"
-      1: "Follow Immich Share settings"
-      2: "Always Allowed"
+      "0": "Disabled"
+      "1": "Follow Immich Share settings"
+      "2": "Always Allowed"
       
