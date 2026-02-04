@@ -25,15 +25,7 @@ configuration:
   downloaded_filename:
     name: "Downloaded Filename Format"
     description: "Choose how files are named when downloaded from the proxy."
-    value:
-      0: "Original Filename (fallback to Asset ID)"
-      1: "Immich Asset ID"
-      2: "Shortened Asset ID (img_xxxxxxxx)"
   allow_download_all:
     name: "Allow Download All (Zip)"
     description: "Control if visitors can download entire albums as a zip file."
-    value:
-      "0": "Disabled"
-      "1": "Follow Immich Share settings"
-      "2": "Always Allowed"
       
