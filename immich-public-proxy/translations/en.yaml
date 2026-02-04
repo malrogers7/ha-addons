@@ -4,7 +4,7 @@ configuration:
     description: "The internal IP or domain of your Immich instance (e.g., http://192.168.1.50:2283).  Must be reachable with no security errors."
   public_url:
     name: "Public Base URL"
-    description: "This should be the public base URL for Immich Public Proxy, without a trailing slash (example https://your-proxy-url.com). If you remove this value, it will dynamically generate it based on the request hostname. This can be useful if you are serving from multiple domains."
+    description: "This should be the public base URL for Immich Public Proxy, without a trailing slash (example https://your-proxy-url.com)."
   show_home_page:
     name: "Enable Landing Page"
     description: "If disabled, the root URL will return a 404 error instead of the proxy welcome screen."
@@ -19,7 +19,7 @@ configuration:
     description: "Set to false if you only want people to be able to download the 'preview' quality photo, rather than your original photo."
   allow_download_all:
     name: "Allow Download All"
-    description: "Allow visitors to download all files as a zip. 0 disable downloads. 1 follow Immich setting per share. 2 always allowed"
+    description: "Allow visitors to download all files as a zip. 0 disable downloads. 1 follow Immich setting per share. 2 always allowed."
   show_image_description:
     name: "Show Image Description"
     description: "Display the caption/description text added in Immich."
