@@ -1,5 +1,5 @@
 name: "Immich Public Proxy"
-version: "1.15.1-ha5"
+version: "1.15.1-ha6"
 slug: "immich_public_proxy"
 description: "A secure public proxy for Immich"
 url: "https://github.com/malrogers7/ha-apps/tree/main/immich-public-proxy"
