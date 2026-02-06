@@ -1,5 +1,5 @@
 #include <tunables/global>
-profile ###PROFILE_NAME### flags=(attach_disconnected,mediate_deleted) {
+profile immich-public-proxy flags=(attach_disconnected,mediate_deleted) {
   #include <abstractions/base>
   #include <abstractions/nameservice>
   #include <abstractions/nodejs>
