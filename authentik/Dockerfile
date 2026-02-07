@@ -10,7 +10,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Copy our Orchestrator script
-COPY /rootfs /
+COPY rootfs/ /
 RUN chmod +x /run.sh
 
 # Home Assistant always runs as root, but we'll drop privileges for sub-services in the script
