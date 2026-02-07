@@ -1,5 +1,5 @@
 name: "Authentik"
-version: "2024.12.0-i"
+version: "2024.12.0-ha-app"
 slug: "authentik"
 description: "Full Authentik stack (App + Redis + Postgres) in one container."
 webui: http://[HOST]:[PORT:9000]
