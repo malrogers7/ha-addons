@@ -58,18 +58,18 @@ done
 
 # --- STEP 4: AUTHENTIK MIGRATIONS ---
 echo "Running Authentik Migrations..."
-/usr/local/bin/ak migrate
+/lifecycle/ak migrate
 
 # --- STEP 5: START AUTHENTIK ---
 # We need to run both Worker and Server.
 # We put Worker in background, and Server in foreground to keep container alive.
 
 echo "Starting Worker..."
-/usr/local/bin/ak worker &
+/lifecycle/ak worker &
 WORKER_PID=$!
 
 echo "Starting Server..."
-/usr/local/bin/ak server &
+/lifecycle/ak server &
 SERVER_PID=$!
 
 # Trap shutdowns to kill everything cleanly
