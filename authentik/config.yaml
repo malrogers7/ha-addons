@@ -1,5 +1,5 @@
 name: "Authentik"
-version: "2024.12.0-a"
+version: "2024.12.0-b"
 slug: "authentik"
 description: "Full Authentik stack (App + Redis + Postgres) in one container."
 arch:
@@ -15,3 +15,17 @@ options:
   secret_key: "CHANGE_ME_PLEASE_TO_SOMETHING_RANDOM"
 schema:
   secret_key: str
+  
+# Enable the Ingress feature
+ingress: true
+ingress_port: 9000
+
+# Add Authentik to the sidebar
+panel_icon: mdi:shield-account
+panel_title: "Authentik"
+panel_admin: true
+
+# Tell Authentik to trust the Home Assistant Supervisor proxy
+AUTHENTIK_TRUSTED_PROXIES: "172.30.32.2"
+# Ensure Authentik listens on the port Ingress is looking for
+AUTHENTIK_LISTEN__HTTP: "0.0.0.0:9000"
