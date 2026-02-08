@@ -1,7 +1,10 @@
 ARG BUILD_FROM=ghcr.io/alangrainger/immich-public-proxy:1.15.1
 FROM ${BUILD_FROM}
 
-# We only need to copy the script, the base image has everything else
+USER root
+
+RUN apk add --no-cache jq
+
 COPY rootfs/ /
 RUN chmod a+x /run.sh
 
