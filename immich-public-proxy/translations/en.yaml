@@ -11,8 +11,11 @@ configuration:
     name: "Enable Landing Page"
     description: "If disabled, the root URL will return a 404 error instead of the proxy welcome screen."
   show_gallery_title:
-    name: "Display Album Title"
-    description: "Shows the name of the shared album at the top of the gallery page."
+    name: "Display Gallery Title"
+    description: "Shows the name of the shared gallery at the top of the page."
+  show_gallery_description:
+    name: "Show Gallery Description"
+    description: "Display the gallery description (if one is set) at the top of the shared gallery page."
   single_image_gallery:
     name: "Single Image Gallery"
     description: "By default a link to a single image will directly open the image file. Set to true if you want to show a gallery page instead for a single item."
